@@ -1,0 +1,50 @@
+<html land="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Viewer</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&family=Sansita:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="contentContainer">
+        <div class="header">
+            <h1>Sleeping Rainbow Ranch</h1>
+        </div>
+        <div class="modelViewer">
+            <model-viewer src="assets/low_poly_McCree/scene.gltf" camera-controls autoplay
+                auto-rotate ar ios-src="assets/Low_poly_McCree.usdz"></model-viewer>
+        </div>
+        <div class="navigationButtons">
+            <a href="cabin.html">
+                <div class="navigationButton">
+                    <span class="material-icons">
+                        navigate_before
+                    </span>
+                    <p class="button">Back</p>
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="navigationButton">
+                    <p class="button">Forward</p>
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </div>
+            </a>
+        </div>
+        <div class="textContainer">
+            <h2>Adventurers</h2>
+            <p class="body">Although the guest ranch did not attract large numbers of visitors, it became a favorite of writers, artists, and, especially, photographers who came year after year to enjoy the unique setting. A garden supplied fresh vegetables to guests who ate together and conversed on the lodge's dining porch.</p>
+        </div>
+    </div>
+</body>
+
+</html>
