@@ -1,52 +1,110 @@
 <html land="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Model Viewer</title>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
     <link rel="stylesheet" href="main.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&family=Sansita:ital,wght@0,400;0,700;0,800;1,400&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&family=Sansita:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    <div class="contentContainer">
-        <div class="header">
-            <h1>Sleeping Rainbow Ranch</h1>
+  <body>
+    <div class="nav">
+      <a href="index.html">
+        <div class="navItem isInactive">
+          <div class="navIcon">
+            <span class="material-icons">
+              book
+            </span>
+          </div>
+          <div class="navLabel">
+            <p class="nav">
+              Intro
+            </p>
+          </div>
         </div>
-        <div class="modelViewer">
-            <model-viewer src="assets/cabin_into_forest/scene.gltf" camera-controls autoplay auto-rotate ar
-                ios-src="assets/Cabin_into_forest.usdz"></model-viewer>
+      </a>
+      <a href="jeep.html">
+        <div class="navItem isActive">
+          <div class="navIcon">
+            <span class="material-icons">
+              view_in_ar
+            </span>
+          </div>
+          <div class="navLabel">
+            <p class="nav">
+              Models
+            </p>
+          </div>
         </div>
-        <div class="navigationButtons">
-            <a href="index.html">
-                <div class="navigationButton">
-                    <span class="material-icons">
-                        navigate_before
-                    </span>
-                    <p class="button">Back</p>
-                </div>
-            </a>
-            <a href="cowboy.html">
-                <div class="navigationButton">
-                    <p class="button">Forward</p>
-                    <span class="material-icons">
-                        navigate_next
-                    </span>
-                </div>
-            </a>
+      </a>
+      <a href="imagetracking.html">
+        <div class="navItem isInactive">
+          <div class="navIcon">
+            <span class="material-icons">
+              smart_display
+            </span>
+          </div>
+          <div class="navLabel">
+            <p class="nav">
+              Video
+            </p>
+          </div>
         </div>
-        <div class="textContainer">
-            <h2>Guest Ranch</h2>
-            <p class="body">Sleeping Rainbow Ranch included a small motel unit with a spectacular, knoll-top view of the
-                Henry Mountains, a log lodge, a house trailer, cabins, and various outbuildings. Lurt constructed power
-                and phone lines upstream through Pleasant Creek Canyon to Grover.</p>
-        </div>
+      </a>
     </div>
-</body>
-
+    <div class="contentContainer">
+      <div class="header">
+        <h1>Sleeping Rainbow Ranch</h1>
+      </div>
+      <div class="modelViewer">
+        <model-viewer
+          src="assets/cabin_into_forest/scene.gltf"
+          camera-controls
+          autoplay
+          auto-rotate
+          ar
+          ios-src="assets/Cabin_into_forest.usdz"
+        ></model-viewer>
+      </div>
+      <div class="navigationButtons">
+        <a href="jeep.html">
+          <div class="navigationButton">
+            <span class="material-icons">
+              navigate_before
+            </span>
+            <p class="button">Back</p>
+          </div>
+        </a>
+        <a href="cowboy.html">
+          <div class="navigationButton">
+            <p class="button">Forward</p>
+            <span class="material-icons">
+              navigate_next
+            </span>
+          </div>
+        </a>
+      </div>
+      <div class="textContainer">
+        <h2>Guest Ranch</h2>
+        <p class="body">
+          Sleeping Rainbow Ranch included a small motel unit with a spectacular,
+          knoll-top view of the Henry Mountains, a log lodge, a house trailer,
+          cabins, and various outbuildings. Lurt constructed power and phone
+          lines upstream through Pleasant Creek Canyon to Grover.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
