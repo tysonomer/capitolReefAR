@@ -20,6 +20,7 @@
   </head>
 
   <body>
+    <script src="/node_modules/rive-canvas/rive.js"></script> 
     <div class="nav">
       <a href="index.html">
         <div class="navItem isActive">
@@ -81,7 +82,7 @@
       }).then(rive => {
         // Rive's ready to rock 'n roll
         // Let's load up a Rive animation file, typically ending in '.riv'
-        const req = new Request("https://cdn.glitch.com/8b1849dc-f2c7-42e9-adae-007f80bab39e%2Fglitch_test.riv?v=1616631702067");
+        const req = new Request('assets/Glitch Test.riv');
         fetch(req)
           .then(res => {
             return res.arrayBuffer();
