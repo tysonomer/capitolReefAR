@@ -87,7 +87,6 @@
           crossorigin
           webkit-playsinline
           autoplay
-          muted
           playsinline
         ></video>
       </a-assets>
@@ -95,13 +94,13 @@
       <a-nft
         videohandler
         type="nft"
-        url="https://cdn.glitch.com/8b1849dc-f2c7-42e9-adae-007f80bab39e%2FlurtVintagePop.png?v=1616607731501"
+        url="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/trex-image/trex"
         smooth="true"
         smoothcount="10"
         smoothtolerance="0.01"
         smooththreshold="5"
       >
-        <a-video src="#vid" position="50 150 -100" width="300" height="175">
+        <a-video src="#vid" rotation="-90 0 0" position="120 0 -190" transform: translatez(180px) width="300" height="175">
         </a-video>
       </a-nft>
       <a-entity camera></a-entity>
